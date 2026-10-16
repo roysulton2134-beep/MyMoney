@@ -1,0 +1,19 @@
+{
+  "name": "my-money",
+  "version": "1.0.0",
+  "description": "My Money - Aplikasi rekapitulasi pemasukan dan pengeluaran harian dengan fitur diagram grafik komparasi dan analisis kategori.",
+  "scripts": {
+    "start": "npx serve -l 3000 ."
+  },
+  "keywords": [
+    "my-money",
+    "finance",
+    "budget-tracker",
+    "catatan-keuangan",
+    "buku-kas",
+    "chartjs",
+    "tailwind"
+  ],
+  "author": "Roy Sulton",
+  "license": "MIT"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "https://mymoneyroi.netlify.app/",
+  "name": "My Money - Rekap Keuangan",
+  "short_name": "My Money",
+  "description": "My Money - Aplikasi Rekap Keuangan Harian. Designed by roi.",
+  "start_url": "https://mymoneyroi.netlify.app/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#F59E0B",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "finance",
+    "productivity",
+    "utilities"
+  ]
+}

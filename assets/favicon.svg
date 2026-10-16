@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Gold Gradients -->
+    <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCEBA4" />
+      <stop offset="25%" stop-color="#E5B942" />
+      <stop offset="50%" stop-color="#FDF2B5" />
+      <stop offset="75%" stop-color="#C69320" />
+      <stop offset="100%" stop-color="#8E630F" />
+    </linearGradient>
+
+    <linearGradient id="goldBody" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FFEB99" />
+      <stop offset="20%" stop-color="#F3C34D" />
+      <stop offset="50%" stop-color="#FFDE6A" />
+      <stop offset="70%" stop-color="#C99424" />
+      <stop offset="100%" stop-color="#9C6B0B" />
+    </linearGradient>
+
+    <linearGradient id="goldDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D9A12B" />
+      <stop offset="50%" stop-color="#9E6D0E" />
+      <stop offset="100%" stop-color="#644203" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter for 3D look -->
+    <filter id="tileShadow" x="-10%" y="-10%" width="125%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#C59B27" flood-opacity="0.18" />
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1E293B" flood-opacity="0.08" />
+    </filter>
+
+    <filter id="symbolShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#805300" flood-opacity="0.35" />
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+
+    <linearGradient id="bgTile" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F9F9FA" />
+    </linearGradient>
+  </defs>
+
+  <!-- Squircle Base Tile -->
+  <rect x="44" y="44" width="424" height="424" rx="112" fill="url(#bgTile)" filter="url(#tileShadow)" />
+  <rect x="44" y="44" width="424" height="424" rx="112" stroke="url(#goldRim)" stroke-width="12" />
+
+  <!-- Subtle Orbital Background Circles & Lines -->
+  <ellipse cx="256" cy="256" rx="140" ry="140" stroke="#E2D1A3" stroke-width="1.8" stroke-opacity="0.6" stroke-dasharray="4 2" />
+  <ellipse cx="256" cy="256" rx="165" ry="115" transform="rotate(-25 256 256)" stroke="#DFCF9E" stroke-width="1.5" stroke-opacity="0.5" />
+  <ellipse cx="256" cy="256" rx="165" ry="115" transform="rotate(35 256 256)" stroke="#DFCF9E" stroke-width="1.5" stroke-opacity="0.5" />
+
+  <!-- Sparkles & Dots -->
+  <circle cx="160" cy="170" r="4" fill="#D4A437" />
+  <circle cx="360" cy="165" r="3.5" fill="#D4A437" />
+  <circle cx="155" cy="290" r="4.5" fill="#D4A437" />
+  <circle cx="160" cy="375" r="4" fill="#D4A437" />
+  <circle cx="355" cy="370" r="3" fill="#D4A437" />
+
+  <!-- 4-point Sparkle Stars -->
+  <path d="M352 185 Q352 195 342 195 Q352 195 352 205 Q352 195 362 195 Q352 195 352 185 Z" fill="#E5BA42" />
+  <path d="M165 240 Q165 248 157 248 Q165 248 165 256 Q165 248 173 248 Q165 248 165 240 Z" fill="#E5BA42" />
+  <path d="M355 285 Q355 292 348 292 Q355 292 355 299 Q355 292 362 292 Q355 292 355 285 Z" fill="#E5BA42" />
+
+  <!-- 3D Intertwined Gold Dollar Symbol ($) with Double Ribbon Effect -->
+  <g filter="url(#symbolShadow)">
+    <!-- Vertical Bar Outer / Underlayer -->
+    <path d="M246 120 H266 V160 H246 Z M246 352 H266 V392 H246 Z" fill="url(#goldDark)" />
+    
+    <!-- Dollar 'S' Curve Outer Shape -->
+    <path d="M320 185 C320 152 292 135 256 135 C215 135 190 155 190 190 C190 228 220 242 262 254 C305 266 332 282 332 322 C332 364 298 385 256 385 C210 385 180 360 180 325 H216 C216 345 234 358 256 358 C280 358 298 345 298 322 C298 292 268 280 228 268 C185 255 156 238 156 192 C156 150 190 128 240 128 C284 128 316 148 320 185 H286 C282 165 266 155 242 155 C222 155 210 166 210 185 C210 205 228 214 260 224 C300 236 340 252 340 310 C340 328 332 344 320 355 Z" fill="none" />
+
+    <!-- Ribbon 1 (Left / Upper Arc & Vertical stem) -->
+    <path d="M246 115 H266 V397 H246 Z" fill="url(#goldRim)" />
+    <path d="M248 115 H264 V397 H248 Z" fill="url(#goldBody)" />
+
+    <!-- Stylized Double-Track S -->
+    <path d="M315 185 C315 155 290 140 256 140 C218 140 195 158 195 190 C195 224 222 238 260 250 C302 263 328 278 328 318 C328 355 298 375 256 375 C214 375 188 352 186 320 H214 C216 338 232 350 256 350 C278 350 298 338 298 318 C298 292 272 280 236 268 C194 254 165 238 165 192 C165 155 194 135 240 135 C284 135 312 155 315 185 Z" fill="url(#goldRim)" />
+
+    <!-- Inner Hollow Contour to create the dual-ribbon channeled look -->
+    <path d="M305 185 C302 162 280 148 248 148 C215 148 202 164 202 188 C202 214 224 227 258 238 C302 252 318 270 318 314 C318 344 294 362 256 362 C222 362 200 344 198 320" stroke="url(#goldDark)" stroke-width="8" stroke-linecap="round" fill="none" />
+
+    <!-- Top Highlight Glint -->
+    <ellipse cx="260" cy="180" rx="35" ry="12" fill="#FFFFFF" fill-opacity="0.3" transform="rotate(-30 260 180)" />
+    <ellipse cx="270" cy="330" rx="30" ry="10" fill="#FFFFFF" fill-opacity="0.25" transform="rotate(-25 270 330)" />
+    <!-- Bright Sparkle Core -->
+    <path d="M328 310 Q328 316 322 316 Q328 316 328 322 Q328 316 334 316 Q328 316 328 310 Z" fill="#FFFFFF" />
+  </g>
+</svg>
